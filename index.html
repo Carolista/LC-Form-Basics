@@ -25,7 +25,14 @@
 			<!-- FORM -->
 			<section id="new-entry">
 				<form id="form">
+                    <!-- ROW 1: Button to open form -->
 					<div class="container row">
+                        <div class="container" id="create">
+							<button id="go-to-form">Create new entry</button>
+						</div>
+                    </div>
+                    <!-- ROW 2: Day & Category input fields -->
+                    <div class="container row">
 						<div class="input-item">
 							<label>Day 
 								<select id="day" name="category">
@@ -58,26 +65,27 @@
 								</select>
 							</label>
 						</div>
+                    </div>
+                    <!-- ROW 3: Activity field -->
+                    <div class="container row">
 						<div class="input-item">
 							<label>Activity 
-								<input id="activity" type="text" name="activity" maxlength="50">
+								<input id="activity" type="text" name="activity" maxlength="60">
 							</label>
 						</div>
-						<div class="container column">
-							<div id="create">
-								<button id="go-to-form">+ Create new entry</button>
-							</div>
-							<div id="container row">
-								<button id="submit" type="submit">Add</button>
-								<button id="cancel">Cancel</button>
-							</div>	
-						</div>					
 					</div>
+                    <!-- ROW 4: Submit or cancel new entry-->
+                    <div class="container row">
+                        <button id="submit" type="submit">Add</button>
+                        <button id="cancel">Cancel</button>
+                    </div>
 				</form>
 			</section>
 			
 		</section>
 
+        <!-- Here are the areas where each new entry will go after being submitted through the form. 
+            JavaScript uses the IDs to submit the code via innerHTML -->
 		<section id="all-entries">
 			<section id="sunday-list"></section>
 			<section id="monday-list"></section>

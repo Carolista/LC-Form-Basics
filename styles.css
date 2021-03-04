@@ -113,6 +113,11 @@ button:focus {
     flex-direction: row;
 }
 
+#activity {
+    width: 290px;
+    margin-bottom: 10px;
+}
+
 #create {
     visibility: visible;
 }
@@ -200,7 +205,7 @@ button:focus {
     align-items: center; /* applies to flexbox only */
 }
 
-/* fake CSS just to make quick color adjustments for colors object in JS file */
+/* Just to make quick color picks in VSCode for colors object in JS file */
 .colors {
     color: #c04e3a;
     color: #e4823c;
